@@ -115,9 +115,9 @@ header {
   font-size: var(--font-center-title);
   letter-spacing: 0.28em;
   text-transform: uppercase;
-
+}
   /* NEŽEN spodnji rob, brez dvojnega stacka */
-  border-bottom: 3px solid var(--color-header-line);
+ /* border-bottom: 3px solid var(--color-header-line);
 }
 
 /* 3) ZLATI trak – grbi + ENA dvojna črta (brez dodatnega stikanja) */
@@ -125,9 +125,9 @@ header {
   background: var(--color-gold);
   padding: 1.8rem 0 1.6rem;
   text-align: center;
-
+}
   /* Samo spodnja dvojna linija (zgoraj nič) */
-  border-bottom: 4px double var(--color-header-line);
+  /*border-bottom: 4px double var(--color-header-line);
 }
 
 .hero-icons-image {
