@@ -1,0 +1,656 @@
+/* =======================================================
+   TEMA IN NASTAVITVE – FONTE, BARVE, ROBOVI, SENČENJE
+   ======================================================= */
+:root {
+  /* Fonti */
+  --font-serif: "Cormorant Garamond", serif;  /* naslovi, glava */
+  --font-sans: "Lato", sans-serif;            /* besedilo */
+
+  /* Velikosti fontov v glavi */
+  --font-brand-size: 2rem;
+  --font-menu-size: 0.85rem;
+  --font-center-title: 1.1rem;
+  --font-parish-size: 1.05rem;
+
+  /* Osnovne barve */
+  --color-gold: #bf921c;
+  --color-gold-soft: #f3e2b5;
+  --color-bg-page: #f5f2ea;
+  --color-bg: #f7f2e4;
+  --color-bg-alt: #ffffff;
+  --color-primary: #263143;
+  --color-primary-soft: #e5ecf5;
+  --color-text: #222222;
+  --color-muted: #7a7f88;
+  --color-muted-light: #a0a4af;
+  --color-border: #ded3b6;
+  --color-border-strong: #b29554;
+  --color-footer-bg: #1f222a;
+  --color-footer-border: #343845;
+
+  /* Dodatne barve (tabela, FB, cookie, banner) */
+  --color-table-row-alt: #fdf7ea;
+  --color-group-row-bg: #f0eee8;
+  --color-header-line: #f9f3e3;
+  --color-facebook: #1877f2;
+  --color-cookie-bg: #f0f0f0;
+  --color-cookie-border: #cccccc;
+  --color-special-banner-bg: #fff7e5;
+
+  /* Splošno */
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+  --shadow-soft: 0 14px 35px rgba(0, 0, 0, 0.06);
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg-page);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-gold);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ================== GLAVA ================== */
+/* 1) ZLATA – brand + meni čez celo širino */
+header {
+  background: var(--color-gold);
+  color: #ffffff;
+}
+
+.top-bar {
+  background: transparent;
+  padding: 1rem 1.2rem 0.7rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: var(--font-serif);
+}
+
+.top-brand {
+  font-size: var(--font-brand-size);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.top-nav {
+  display: flex;
+  gap: 1.2rem;
+  font-size: var(--font-menu-size);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.top-nav a {
+  color: #ffffff;
+}
+
+/* 2) BELI trak z napisom – brez dvojnih robov */
+.mid-bar {
+  background: var(--color-bg-alt);
+  color: var(--color-gold);
+  padding: 1.2rem 0 1.2rem;
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: var(--font-center-title);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+
+  /* NEŽEN spodnji rob, brez dvojnega stacka */
+  border-bottom: 3px solid var(--color-header-line);
+}
+
+/* 3) ZLATI trak – grbi + ENA dvojna črta (brez dodatnega stikanja) */
+.hero-icons {
+  background: var(--color-gold);
+  padding: 1.8rem 0 1.6rem;
+  text-align: center;
+
+  /* Samo spodnja dvojna linija (zgoraj nič) */
+  border-bottom: 4px double var(--color-header-line);
+}
+
+.hero-icons-image {
+  max-width: 780px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Imena župnij – večja, bold, več razmika */
+.hero-parish-names {
+  margin-top: 1.4rem;
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  letter-spacing: 0.33em;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  gap: 4.5rem;
+  flex-wrap: wrap;
+  font-weight: 600;
+}
+
+.hero-parish-names span {
+  white-space: nowrap;
+}
+
+/* ========= FB LINK NA ZAČETKU ========= */
+.fb-top-link-wrap {
+  background: transparent;
+}
+
+.fb-top-link {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.9rem 1.2rem 0.4rem;
+}
+
+.fb-top-card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  background: var(--color-bg-alt);
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+  padding: 0.55rem 1.3rem;
+  font-size: 0.9rem;
+}
+
+.fb-top-card:hover {
+  text-decoration: none;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.fb-top-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--color-facebook);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.fb-top-text {
+  color: var(--color-primary);
+  font-size: 0.95rem;
+}
+
+.fb-top-text span {
+  font-weight: 600;
+}
+
+/* ============ GLAVNA VSEBINA ============ */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.4rem 1.2rem 2.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.section {
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-lg);
+  padding: 1.1rem 1.2rem 1.3rem;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--color-border);
+}
+
+.section h2 {
+  font-size: 1rem;
+  margin-bottom: 0.45rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.section h2 span {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--color-muted);
+  text-transform: none;
+  letter-spacing: 0;
+  margin-left: 0.3rem;
+}
+
+.section p.section-intro {
+  font-size: 0.88rem;
+  color: var(--color-muted);
+  margin-bottom: 0.7rem;
+}
+
+/* POSEBEN BANNER */
+#special-banner {
+  display: none;
+  margin-bottom: 0.8rem;
+  border-radius: 14px;
+  padding: 0.7rem 0.9rem;
+  background: var(--color-special-banner-bg);
+  border: 1px solid var(--color-border-strong);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+  font-size: 0.9rem;
+  color: var(--color-primary);
+}
+
+#special-banner strong {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.8rem;
+  display: block;
+  margin-bottom: 0.1rem;
+}
+
+#special-banner a {
+  font-weight: 600;
+}
+
+/* MAŠE */
+.mase-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  margin-bottom: 0.6rem;
+}
+
+.mase-meta strong {
+  color: var(--color-primary);
+}
+
+/* WRAPPER, da tabela na mobitelu lepo scrolla */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mase-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin-bottom: 0.7rem;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  min-width: 520px; /* da se na zelo ozkem ekranu ne zmečka, ampak drsi v stran */
+}
+
+.mase-table thead {
+  background: var(--color-primary-soft);
+}
+
+.mase-table th,
+.mase-table td {
+  padding: 0.42rem 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.mase-table th {
+  font-weight: 600;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+.mase-table tbody tr:nth-child(even) {
+  background: var(--color-table-row-alt);
+}
+
+.mase-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.group-row td {
+  background: var(--color-group-row-bg);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  border-bottom: 1px solid var(--color-border-strong);
+}
+
+.group-row.sunday td {
+  background: var(--color-gold-soft);
+  color: var(--color-primary);
+  border-top: 2px solid var(--color-border-strong);
+  border-bottom: 1px solid var(--color-border-strong);
+}
+
+.note {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+}
+
+.weekly-notices {
+  margin-top: 0.6rem;
+  border-top: 1px dashed var(--color-border);
+  padding-top: 0.6rem;
+}
+
+.weekly-notices h3 {
+  font-size: 0.86rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+  color: var(--color-primary);
+}
+
+.weekly-notices ul {
+  margin-left: 1rem;
+  font-size: 0.88rem;
+  color: var(--color-text);
+}
+
+.weekly-notices li {
+  margin-bottom: 0.22rem;
+}
+
+/* OBVESTILA */
+.announcements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.announcement {
+  padding: 0.7rem 0.8rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: #faf7ef;
+}
+
+.announcement-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  margin-bottom: 0.2rem;
+}
+
+.announcement-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--color-primary);
+}
+
+.announcement-pdf {
+  display: inline-block;
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.announcement-pdf::before {
+  content: "📄 ";
+}
+
+/* ŽUPNIJE */
+.parishes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.8rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.7rem;
+}
+
+.parish-card {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: #fdfaf2;
+}
+
+.parish-photo {
+  height: 110px;
+  overflow: hidden;
+}
+
+.parish-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.parish-body {
+  padding: 0.6rem 0.7rem 0.7rem;
+}
+
+.parish-body strong {
+  display: block;
+  margin-bottom: 0.1rem;
+}
+
+/* KONTAKT + MAPA */
+.contact-card {
+  padding: 0.8rem 0.9rem;
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--color-border);
+  background: var(--color-bg-alt);
+  font-size: 0.9rem;
+  margin-bottom: 0.7rem;
+}
+
+.contact-card p {
+  margin-bottom: 0.2rem;
+}
+
+.map-wrapper {
+  margin-top: 0.6rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.map-inner {
+  position: relative;
+  padding-bottom: 40%;
+  height: 0;
+}
+
+.map-inner iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.map-note {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin-top: 0.35rem;
+}
+
+/* NOGA */
+.site-footer {
+  background: var(--color-footer-bg);
+  color: #f3f4f8;
+  border-top: 2px solid var(--color-footer-border);
+  padding: 2.0rem 1.2rem 1.2rem;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.3rem;
+}
+
+.footer-logo img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.6rem;
+  flex: 1;
+}
+
+.footer-col-title {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid var(--color-footer-border);
+}
+
+.footer-links {
+  list-style: none;
+  font-size: 0.84rem;
+  color: var(--color-muted-light);
+}
+
+.footer-links li {
+  margin-bottom: 0.25rem;
+}
+
+.footer-links a {
+  color: #eaeaea;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.hozana-box {
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-md);
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+.hozana-box iframe {
+  width: 100%;
+  max-width: 320px;
+  height: 170px;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-alt);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--color-footer-border);
+  padding-top: 0.7rem;
+  font-size: 0.78rem;
+  color: var(--color-muted-light);
+  text-align: center;
+}
+
+/* PIŠKOTKI */
+.cookie-banner {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 8px 12px;
+  background: var(--color-cookie-bg);
+  border-top: 1px solid var(--color-cookie-border);
+  font-size: 13px;
+  z-index: 100;
+}
+
+.cookie-ok-btn {
+  margin-left: 12px;
+  padding: 2px 10px;
+  font-size: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-nav {
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-parish-names {
+    gap: 1.4rem;
+  }
+
+  .footer-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .fb-top-link {
+    padding-inline: 1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  main {
+    padding-inline: 1rem;
+  }
+
+  .footer-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .top-brand {
+    font-size: 1.4rem;
+    letter-spacing: 0.22em;
+  }
+}
