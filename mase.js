@@ -1,32 +1,32 @@
-// mase.js – podatki za eno številko oznanil (23.–30. 11. 2025)
+// mase.js – podatki za eno številko oznanil (9.–16. 11. 2025)
 
 window.MASE = {
-  period: "23. 11. – 30. 11. 2025",
+  period: "9. 11. – 16. 11. 2025",
 
-  // NED. 23. 11. – prva nedelja (Kristus Kralj)
+  // NED. 9. 11. – prva nedelja (zahvalna)
   sundayStart: {
-    date: "23. 11. 2025",
-    label: "34. nedelja med letom; Kristus Kralj vesoljstva, nedelja sv. Cecilije",
+    date: "9. 11. 2025",
+    label: "32. nedelja med letom; zahvalna nedelja; posvetitev lateranske bazilike, Teodor, mučenec",
     masses: [
       {
         parish: "Brezno",
         time: "09:00",
-        note: "Maša za + Kristino Šantl, obl., in za + sorodnike"
+        note: "Maša za + Stanislavo Ropret in sestro Greto; srečanje zakoncev jubilantov"
       },
       {
         parish: "Remšnik",
         time: "10:30",
-        note: "Maša za + Ivana Jevšnik, 4. obl.; v spomin: Maša za + Kristino Altbauer"
+        note: "Maša za + Frančiško in Jožefa Kraker; v spomin: Maša za + Špelo Kričej; v spomin: Maša za + Ota, Marjeto in Vilija Poročnik; srečanje zakoncev jubilantov"
       },
       {
         parish: "Ožbalt",
         time: "08:30",
-        note: "Maša za družino Kaiser in Glazar"
+        note: "Maša za + Jureta Pelko, 30. dan"
       },
       {
         parish: "Kapla",
         time: "10:30",
-        note: "Maša za + Rozo in Franciška Štelcer, 6. obl.; v spomin: Maša za + Štefana Kašman, 3. obl.; v spomin: Maša za + Maksa Verčko, 5. obl."
+        note: "Maša za + Angelo Volmajer"
       }
     ]
   },
@@ -34,138 +34,122 @@ window.MASE = {
   // PON–SOB – maše med tednom
   weekdays: [
     {
-      date: "24. 11. 2025",
+      date: "10. 11. 2025",
       day: "Ponedeljek",
-      saint: "Vietnamski mučenci",
+      saint: "Leon Veliki, papež",
       masses: [
         {
           parish: "Kapla",
-          time: "17:00",
-          note: "Molitvena ura pred Najsvetejšim"
-        },
-        {
-          parish: "Kapla",
-          time: "18:00",
-          note: "Maša za + Alijano Garmut; po maši srečanje članov ŽPS"
+          time: "07:00",
+          note: "Maša za + Ano Kerbler"
         }
       ]
     },
     {
-      date: "25. 11. 2025",
+      date: "11. 11. 2025",
       day: "Torek",
-      saint: "Katarina Aleksandrijska, mučenka",
+      saint: "Martin, škof",
       masses: [
         {
-          parish: "Kapla",
-          time: "10:30",
-          note: "Maša za + Štefko Rihter"
-        },
-        {
-          parish: "Kapla",
-          time: "18:00",
-          note: "Maša za + starše, brate Mežnarc ter sestro Terezijo in Ivana Kerbler"
+          parish: "Ožbalt",
+          time: "17:00",
+          note: "Maša za + Simona Tertinek"
         }
       ]
     },
     {
-      date: "26. 11. 2025",
+      date: "12. 11. 2025",
       day: "Sreda",
-      saint: "Valerijan Oglejski",
+      saint: "Jozafat Kunčevič, mučenec",
       masses: [
         {
-          parish: "Ponikva",
-          time: "12:00",
-          note: "Maša za žive in + župljane ter sodelavce Karitas – romanje sodelavcev Karitas in Klic dobrote"
-        },
-        {
-          parish: "Brezno",
-          time: "18:00",
-          note: "Maša za + Terezijo Par"
+          parish: "Kapla",
+          time: "07:00",
+          note: "Maša za žive in + župljane ter dobrotnike"
         }
       ]
     },
     {
-      date: "27. 11. 2025",
+      date: "13. 11. 2025",
       day: "Četrtek",
-      saint: "Modest in Virgil, apostola Karantanije",
+      saint: "Stanislav Kostka, redovnik",
       masses: [
         {
-          parish: "Kapla",
-          time: "07:00",
-          note: "Maša po namenu: za + Maksa Verčko"
+          parish: "Remšnik",
+          time: "18:00",
+          note: "Blagoslov ceste pri Helbinu"
         },
         {
           parish: "Brezno",
           time: "18:00",
-          note: "Maša za + Terezijo Par"
+          note: "Maša za + Silvo Auberšek, 2. obl.; po maši srečanje članov ŽPS"
         }
       ]
     },
     {
-      date: "28. 11. 2025",
+      date: "14. 11. 2025",
       day: "Petek",
-      saint: "Katarina Laboure, redovnica",
+      saint: "Nikolaj Tavelič, mučenec",
       masses: [
         {
           parish: "Kapla",
           time: "07:00",
-          note: "Maša po namenu: za + Maksa Verčko"
+          note: "Maša za + Ivano Kašman"
         },
         {
           parish: "Remšnik",
           time: "18:00",
-          note: "Maša za + Petra in Petro Grogl"
+          note: "Maša za + Antona Pavlič; po maši srečanje članov ŽPS"
         }
       ]
     },
     {
-      date: "29. 11. 2025",
+      date: "15. 11. 2025",
       day: "Sobota",
-      saint: "Filomen, mučenec",
+      saint: "Albert Veliki, škof",
       masses: [
         {
           parish: "Brezno",
           time: "18:00",
-          note: "Maša za + Draga Kozjak in vse sorodnike"
+          note: "Maša za + Rudolfa Klančič, 8. dan"
         }
       ]
     }
   ],
 
-  // NED. 30. 11. – naslednja nedelja
+  // NED. 16. 11. – naslednja nedelja
   sundayEnd: {
-    date: "30. 11. 2025",
-    label: "1. adventna nedelja, nedelja Karitas",
+    date: "16. 11. 2025",
+    label: "33. nedelja med letom; sv. Marjeta Škotska",
     masses: [
       {
-        parish: "Maribor",
+        parish: "Brezno",
         time: "09:00",
-        note: "Maša za + Ludmilo Miglič"
+        note: "Maša za + Tončija Jakovljevič"
       },
       {
         parish: "Remšnik",
         time: "10:30",
-        note: "Maša za + Dragičo Boroj in Ludmilo Zagmajster; v spomin: Maša za + Franca Stražišnik; v spomin: Maša za + Antona Planinšič; po maši srečanje staršev bodočih prvoobhajancev"
+        note: "Maša za + Štefana Pečovnik; v spomin: Maša za + Srečka Erjavc"
       },
       {
         parish: "Ožbalt",
         time: "08:30",
-        note: "Maša za + Ano Verčko in starše Urih"
+        note: "Maša za + Roziko Golob, 5. obl.; v spomin: Maša za družino Ludvika Cepec"
       },
       {
         parish: "Kapla",
         time: "10:30",
-        note: "Maša za + Ludmilo, Janeza Robnik, Štefko in Maksa Javornik ter Roka Čadež"
+        note: "Maša za + Alojzijo Helbl, 1. obl.; srečanje zakoncev jubilantov"
       }
     ]
   },
 
   // OZNANILA TE NEDELJE (spodnji del liste oznanil)
   notices: [
-    "Danes je referendum, naša pravica in dolžnost. Zaključujemo devetdnevnico za spoštovanje življenja – za zaščito vsakega življenja od spočetja do naravne smrti.",
-    "Ob minulom godu sv. Cecilije se zahvaljujemo vsem pevskim zborom, organistom in vsem, ki skrbijo za lepo petje. Bog povrni.",
-    "Vstopamo v teden Karitas pod geslom »Na poti upanja«. V sredo 26. 11. bo romanje sodelavcev Karitas na Ponikvo in dobrodelni koncert Klic dobrote.",
-    "Naslednja nedelja je prva adventna. Blagoslovili bomo adventne vence, ki jih bo letos mogoče dobiti tudi pri Karitas in v Kolpingu (Remšnik).",
-    "Na razpolago je že Marijanski koledar in družinska pratika."
+    "Danes je zahvalna nedelja, ko se Bogu zahvaljujemo za vse sadove zemlje in za vse, kar prejemamo za dušni in telesni blagor. Hvala vsem in vsakemu posebej za vaš doprinos župniji in Cerkvi.",
+    "V Breznu in na Remšniku je zahvalna maša za zakonske jubilante; na Kapli in Ožbaltu pa 16. 11. Povabljeni zakonci, ki letos obhajate svoj jubilej.",
+    "V soboto, 15. 11. 2025, ob 9.30 bo v pastoralnem centru župnije Maribor – sv. Janez Bosko, škofijsko srečanje članov ŽPS-ja. Vabljeni.",
+    "V torek, 18. 11., ob 18. uri vabljeni na okroglo mizo na temo »Evtanazija / pravica do življenja«, ki bo v gasilskem domu v Breznu."
   ]
 };
